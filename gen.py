@@ -19,13 +19,13 @@ for region in old_dict:
             for barangay in old_dict[str(region)]['province_list'][province]['municipality_list'][mun]['barangay_list']:
                 new_dict["arr"].append({
                     "postcode": 'none',
-                    "locality": mun,
-                    "state": province,
+                    "municipality": mun,
+                    "province": province,
                     "barangay": barangay,
                     "long": 0,
                     "lat": 0,
                     "id": 0,
-                    "dc": old_dict[str(region)]['region_name'],
+                    "region": old_dict[str(region)]['region_name'],
                     "type": "none",
                     "status": ""
                 })
